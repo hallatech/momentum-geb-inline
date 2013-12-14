@@ -1,0 +1,16 @@
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+
+repositories {
+	mavenCentral()
+}
+
+defaultTasks 'test'
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '1.9'
+}
+
+apply from: 'scripts/homepage.groovy'
+
+
