@@ -28,6 +28,8 @@ The defaults will leave the browser windows open where the test completes. To cl
     
 There is no re-usability between scripts as its just a POC before we move on to Page Objects,  re-usability and configuration injection.
 
+Note: There is a random function on the email/login so the tests can be run multiple times without having to reset the database.
+
 Notice in the scripts scope for
 - ATG generic objects (profile, category, product, order, price)
 - Site Builder objects (page) - For functional test the other objects are not so much required, as the tests are fairly simple to construct,

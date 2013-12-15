@@ -122,7 +122,7 @@ try {
 	assert field.size() == 1
 	field.find('option',value:'Mr').click()
 	
-  nav = browser.$('form', id:'frm-checkout-form-delivery-address').find('input')
+	nav = browser.$('form', id:'frm-checkout-form-delivery-address').find('input')
 	field = nav.findAll { it.getAttribute('id').contains('frm-first-name') }
 	field.value(user.firstName)
 	field = nav.findAll { it.getAttribute('id').contains('frm-last-name') }
