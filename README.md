@@ -3,7 +3,7 @@ momentum-geb-inline
 
 Momentum User tests with Geb using inline scripting only via gradle.
 
-Simple inline scripts using gradle to test Momentum with GEB. This version only uses inline groovy scripts for POC.
+Simple inline scripts using gradle to test Momentum with GEB. This version only uses inline groovy scripts for POC in its simplest raw form.
 
 The tests assume you have Momentum Storefront running on localhost on port 8080, either local on your host or in a VM with port forwarding.
 
@@ -29,6 +29,10 @@ The defaults will leave the browser windows open where the test completes. To cl
 There is no re-usability between scripts as its just a POC before we move on to Page Objects,  re-usability and configuration injection.
 
 Note: There is a random function on the email/login so the tests can be run multiple times without having to reset the database.
+Also if you want to bring this into Eclipse, the gradle eclipse plugin is applied in the build.gradle, so after cloning this project run:
+
+	./gradlew eclipse
+	gradle eclipse
 
 Notice in the scripts scope for
 - ATG generic objects (profile, category, product, order, price)
